@@ -432,7 +432,7 @@
     apply(init||document.documentElement.dataset.mode||'calm',false);
     // clicks on any [data-mode] control
     document.addEventListener('click',e=>{
-      const b=e.target.closest('[data-mode]');
+      const b=e.target.closest('button[data-mode]');
       if(!b)return;
       e.preventDefault();
       apply(b.dataset.mode,true);
